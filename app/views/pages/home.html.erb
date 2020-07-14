@@ -1,0 +1,930 @@
+
+
+<div class="container">
+
+<div class="panel panel-heading">
+<h3>Tutorial: Instalação necessária para Ruby on Rails</h3>
+<button id="filter2" class="btn btn-default" data-toggle="collapse" data-target="#collapsePanel2">
+
+Abrir <i class="fa fa-chevron-down"></i>
+</button>
+</div>
+
+
+<div class="collapse panel-body" id="collapsePanel2">
+<h4>Instalar o Rails (Simplificado)</h4> 
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+
+<h3 style="text-align: left;">
+Passo 1: Faça o download do instalador de Rails</h3>
+Windows :&nbsp;<a href="https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.3.0.exe" target="_blank">Rails 5.0 - RailsInstaller para Windows</a> (104 MB)<br />
+<div>
+Mac OSX:&nbsp;<a href="https://s3.amazonaws.com/railsinstaller/OSX/RailsInstaller-1.0.4-osx-10.7.app.tgz" target="_blank">Rails 4.1 - RailsInstaller para Mac OSX</a>&nbsp;(320 MB)</div>
+<div>
+<div>
+<h3 style="text-align: left;">
+Passo 2: Instale o arquivo após o download</h3>
+Quando ele estiver disponível em sua máquina, clique duas vezes e siga as instruções.<br />
+<h3>
+Passo 3: Verifique se ele foi instalado corretamente</h3>
+Execute o comando abaixo em um terminal e verifique se o Rails foi instalado corretamente.<br />
+<br />
+<i>Por exemplo:</i><br />
+<pre><code>$ rails -v
+# Rails 4.1.6</code>
+</pre>
+<h2 style="font-family: &quot;Times New Roman&quot;; white-space: normal;">
+Instalar o Rails (Completa)</h2>
+<h3>
+Passo 1: Instalar o Ruby&nbsp;</h3>
+Acessar a página <a href="http://rubyinstaller.org/downloads/" target="_blank">http://rubyinstaller.org/downloads/</a>&nbsp;e instalar o executável para Windows:<br />
+<br />
+<i>Por exemplo:</i>&nbsp;</div>
+</div>
+</div>
+<ul style="background-color: white; border: 0px; color: #333333; font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 1.5em 1.5em; padding: 0px; vertical-align: baseline; white-space: normal;">
+<li class="rubyinstallerexe" style="border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; list-style-image: url(&quot;../assets/exe_16x16.png&quot;); list-style-position: inside; margin: 0px; padding: 0px; vertical-align: baseline;"><a href="https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.6.exe" style="border: 0px; color: #ad050a; cursor: pointer; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Ruby 2.2.6</a>&nbsp;(x32)</li>
+<li class="rubyinstallerexe" style="border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; list-style-image: url(&quot;../assets/exe_16x16.png&quot;); list-style-position: inside; margin: 0px; padding: 0px; vertical-align: baseline;"><a href="https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.6-x64.exe" style="border: 0px; color: #ad050a; cursor: pointer; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; text-decoration-line: none; vertical-align: baseline;" target="_blank">Ruby 2.2.6</a>&nbsp;(x64)</li>
+</ul>
+<div>
+Abrir o diretório&nbsp;<i>C:\Ruby22-x64&nbsp;</i>e ver que o Ruby foi instalado.&nbsp;</div>
+<div>
+Verificar se o diretório&nbsp;<i>C:\Ruby22-x64\bin</i> faz parte da Variável de Ambiente PATH, se não estiver adicionar.</div>
+<div>
+<br /></div>
+<div>
+Execute o comando abaixo em um terminal e verifique se o Rails foi instalado corretamente.<br />
+<br />
+<i>Por exemplo:</i></div>
+<div>
+<pre>$ ruby -v
+ruby 2.2.6p396 (2016-11-15 revision 56800) [x64-mingw32]
+</pre>
+</div>
+<h3>
+Passo 2: Instalar a Ferramenta Sqlite</h3>
+Instalar o Sqlite, baixando os arquivos binários pré-compilados para Windows em: <a href="https://www.sqlite.org/download.html">https://www.sqlite.org/download.html</a><br />
+<br />
+Windows :&nbsp;<a href="https://www.sqlite.org/2017/sqlite-tools-win32-x86-3200100.zip" target="_blank">sqlite-tools-win32-x86-3200100.zip </a>&nbsp;(1,57 MB)<br />
+<div>
+Mac OSX:&nbsp;<a href="https://www.sqlite.org/2017/sqlite-tools-osx-x86-3200100.zip" target="_blank">sqlite-tools-osx-x86-3200100.zip</a>&nbsp;(1,14 MB)<br />
+<br /></div>
+Após o download, descompactar e instalar.<br />
+<h3>
+Passo 3: Instalar a DLL do Sqlite para Windows</h3>
+Windows x86:&nbsp;<a href="https://www.sqlite.org/2017/sqlite-dll-win32-x86-3200100.zip" target="_blank">sqlite-dll-win32-x86-3200100.zip</a>&nbsp;(435 KB)<br />
+Windows x64:&nbsp;<a href="https://www.sqlite.org/2017/sqlite-dll-win64-x64-3200100.zip" target="_blank">sqlite-dll-win64-x64-3200100.zip</a>&nbsp;(722 KB)<br />
+<br />
+Após o download, descompactar e colocar as DLLs na pasta do \bin do <i>C:\Ruby22-x64\bin</i> instalado anteriormente.<br />
+<h3>
+Passo 4: Instalar a Gem para Sqlite3</h3>
+Instalar a gem para SQLite3, no terminal:<br />
+<pre><code>
+$ gem install sqlite3 -v 1.3.12</code></pre>
+<br />
+Pesquisar pela versão mais atual em <a href="http://v/" target="_blank">https://rubygems.org/gems/sqlite3/versions </a><br />
+<br />
+<pre><code>$ gem install --version 1.3.3 sqlite3-ruby</code></pre>
+<br />
+Pesquisar pela versão mais atual em <a href="https://rubygems.org/gems/sqlite3-ruby" target="_blank">https://rubygems.org/gems/sqlite3-ruby</a><br />
+<br />
+Dica: Para quem usar firefox é instalar o SQLite Manager para gerenciar sua base de dados.<br />
+<h3>
+Passo 5: Instalar a RubyGem</h3>
+Acessar a página <a href="https://rubygems.org/pages/download" target="_blank">https://rubygems.org/pages/download</a>&nbsp;e fazer download do ZIP.<br />
+<br />
+Descompactar o arquivo baixado em C:\<br />
+<br />
+<i>Por exemplo:</i><br />
+<br />
+<pre><code>C:\rubygems-2.6.13</code></pre>
+<br />
+No terminal acessar a pasta acima e executar o seguinte comando:<br />
+<br />
+<i>Por exemplo:</i><br />
+<pre><code>C:\rubygems-2.6.13&gt;ruby setup.rb</code></pre>
+<h3>
+Passo 6: Instalar a Gem Bundler</h3>
+Bundler é uma RubyGem que é utilizada para gerenciar as dependências do projeto com outras Gems.<br />
+<br />
+No terminal acessar a pasta abaixo e executar o seguinte comando:<br />
+<br />
+<i>Por exemplo:</i><br />
+<pre><code>C:\rubygems-2.6.13&gt;gem install bundler</code></pre>
+<h3>
+Passo 6: Instalar a Gem Rails</h3>
+Rails é o framework para construção de aplicações WEB utilizando a linguagem Ruby.<br />
+<br />
+No terminal acessar a pasta abaixo e executar o seguinte comando:<br />
+<br />
+<i>Por exemplo:</i><br />
+<pre><code>C:\rubygems-2.6.13&gt;gem install rails -v4.2.9
+</code></pre>
+<pre><code>
+</code></pre>
+Pesquisar pela versão mais atual em <a href="http://guides.rubyonrails.org/">http://guides.rubyonrails.org</a><br />
+<br />
+Execute o comando abaixo em um terminal e verifique se o Rails foi instalado corretamente.<br />
+<div>
+<br /></div>
+<i>Por exemplo:</i><br />
+<pre><code>$ rails -v
+# Rails 4.2.9</code></pre>
+
+</div> <!-- div heading-->
+
+<div class="panel panel-heading">
+
+<h3>Tutorial: Criar um projeto em Ruby on Rails</h3>
+<button id="filter3" class="btn btn-default" data-toggle="collapse" data-target="#collapsePanel3">
+
+Abrir <i class="fa fa-chevron-down"></i>
+</button>
+</div>
+
+
+<div class="collapse panel-body" id="collapsePanel3">
+<h4># Criar o projeto rails</h4> 
+<h3>
+Passo 1: Criar um projeto em Rails</h3>
+Acessar o diretório um diretório qualquer no terminal e executar o seguinte comando:<br />
+<br />
+<i>Por exemplo:</i><br />
+<pre>C:\Projetos&gt;rails new computacaonapratica</pre>
+<br />
+Abrir o diretório criado "computacaonapratica" e visualizar todos os arquivos criados.</div>
+
+<div dir="ltr" trbidi="on">
+<br /></div>
+<div dir="ltr" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;README.rdoc</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;Rakefile</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;config.ru</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;.gitignore</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;Gemfile</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;app</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;app/assets/javascripts/application.js</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;app/assets/stylesheets/application.css</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;app/controllers/application_controller.rb</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;app/helpers/application_helper.rb</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp; create &nbsp;app/views/layouts/application.html.erb</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+&nbsp; &nbsp; &nbsp;...</div>
+<h3>
+Passo 2: Acessar o diretório do projeto criado</h3>
+No terminal entrar no diretório criado e instale o bundle no projeto:<br />
+<br />
+<i>Por exemplo:</i><br />
+<pre>C:\Projetosl&gt;cd computacaonapratica
+
+C:\Projetos\computacaonapratica&gt;bundle install /pre&gt;
+
+Descrição de cada pasta criada no projeto:</pre>
+</div>
+<div dir="ltr" trbidi="on">
+<br />
+<div dir="ltr" style="margin-left: 0pt;">
+<table style="border-collapse: collapse; border: none;"><colgroup><col width="104"></col><col width="486"></col></colgroup><tbody>
+<tr style="height: 0pt;"><td style="background-color: #eeeeee; border-bottom: solid #cccccc 1.5pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: #eeeeee; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Pasta</span></div>
+</td><td style="background-color: #eeeeee; border-bottom: solid #cccccc 1.5pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: #eeeeee; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 700; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Propósito</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 1.5pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">app/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 1.5pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Contém os controllers, models, views, helpers, mailers e assets.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">bin/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Contains the rails script that starts your app and can contain other scripts you use to setup, update, deploy or run your application.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">config/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Configure your application's routes, database, and more. This is covered in more detail in </span><a href="http://guides.rubyonrails.org/configuring.html" style="text-decoration: none;"><span style="background-color: white; color: #980905; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">Configuring Rails Applications</span></a><span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">config.ru</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Rack configuration for Rack based servers used to start the application.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">db/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Contains your current database schema, as well as the database migrations.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Gemfile</span></div>
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Gemfile.lock</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">These files allow you to specify what gem dependencies are needed for your Rails application. These files are used by the Bundler gem. For more information about Bundler, see the </span><a href="http://bundler.io/" style="text-decoration: none;"><span style="background-color: white; color: #980905; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">Bundler website</span></a><span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">lib/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Extended modules for your application.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">log/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Application log files.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">public/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The only folder seen by the world as-is. Contains static files and compiled assets.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Rakefile</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">This file locates and loads tasks that can be run from the command line. The task definitions are defined throughout the components of Rails. Rather than changing Rakefile, you should add your own tasks by adding files to the lib/tasks directory of your application.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">README.md</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">This is a brief instruction manual for your application. You should edit this file to tell others what your application does, how to set it up, and so on.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">test/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Unit tests, fixtures, and other test apparatus. These are covered in </span><a href="http://guides.rubyonrails.org/testing.html" style="text-decoration: none;"><span style="background-color: white; color: #980905; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">Testing Rails Applications</span></a><span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">.</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">tmp/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Temporary files (like cache and pid files).</span></div>
+</td></tr>
+<tr style="height: 0pt;"><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">vendor/</span></div>
+</td><td style="border-bottom: solid #cccccc 0.75pt; border-left: solid #cccccc 0.75pt; border-right: solid #cccccc 0.75pt; border-top: solid #cccccc 0.75pt; padding: 7pt 8pt 7pt 8pt; vertical-align: top;"><div dir="ltr" style="line-height: 1.38; margin-bottom: 17pt; margin-top: 0pt;">
+<span style="background-color: white; color: #333333; font-family: &quot;arial&quot;; font-size: 10.5pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">A place for all third-party code. In a typical Rails application this includes vendored gems.</span></div>
+</td></tr>
+</tbody></table>
+</div>
+<br />
+<h3>
+Passo 3: Iniciando servidor web</h3>
+</div>
+<div dir="ltr" trbidi="on">
+No terminal entrar no diretório do projeto criado e inicie o servidor com o seguinte comando:</div>
+<div dir="ltr" trbidi="on">
+<br />
+C:\users\carol\blog&gt;rails server</div>
+<div dir="ltr" trbidi="on">
+<br />
+Acessar a página:&nbsp;<a href="http://localhost:3000/">http://localhost:3000</a> </div>
+<div dir="ltr" trbidi="on">
+Visualizar a página do Rails!</div>
+<div dir="ltr" trbidi="on">
+Para fazer a página inicial, o prompt fazer Ctrl + c para parar o servidor, então confirme a operação.
+</div> <!-- heading-->
+
+</div>
+
+
+
+<div class="panel panel-heading">
+
+<h3>Tutorial: Criando Aplicação em Rails Com Login</h3>
+<button id="filter1" class="btn btn-default" data-toggle="collapse" data-target="#collapsePanel1">
+
+Abrir <i class="fa fa-chevron-down"></i>
+</button>
+</div>
+
+
+<div class="collapse panel-body" id="collapsePanel1">
+<h4># Criar o projeto rails</h4> 
+
+<pre>
+<code>
+No prompt:
+
+C:\Projetos>rails new computacaonapratica
+      create
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/to_time_preserves_timezone.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/.............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Fetching rake 12.1.0
+Installing rake 12.1.0
+Using i18n 0.8.6
+Using minitest 5.10.3
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.2.0
+Using rack 1.6.8
+Using mime-types-data 3.2016.0521
+Using arel 6.0.4
+Using debug_inspector 0.0.3
+Using bundler 1.15.4
+Fetching byebug 9.1.0
+Installing byebug 9.1.0 with native extensions
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Fetching thor 0.20.0
+Installing thor 0.20.0
+Using concurrent-ruby 1.0.5
+Using ffi 1.9.18 (x64-mingw32)
+Fetching multi_json 1.12.2
+Installing multi_json 1.12.2
+Using json 1.8.6
+Using rb-fsevent 0.10.2
+Using rdoc 4.3.0
+Using tilt 2.0.8
+Using sqlite3 1.3.13 (x64-mingw32)
+Using turbolinks-source 5.0.3
+Using tzinfo 1.2.3
+Using nokogiri 1.8.0 (x64-mingw32)
+Using rack-test 0.6.3
+Using mime-types 3.1
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using uglifier 3.2.0
+Using sprockets 3.7.1
+Using rb-inotify 0.9.10
+Using sdoc 0.4.2
+Using turbolinks 5.0.1
+Using activesupport 4.2.8
+Using tzinfo-data 1.2017.2
+Using loofah 2.0.3
+Using mail 2.6.6
+Using sass-listen 4.0.0
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.4.0
+Using activemodel 4.2.8
+Using jbuilder 2.7.0
+Using rails-html-sanitizer 1.0.3
+Using sass 3.5.1
+Using rails-dom-testing 1.0.8
+Using activejob 4.2.8
+Using activerecord 4.2.8
+Using actionview 4.2.8
+Using actionpack 4.2.8
+Using actionmailer 4.2.8
+Using railties 4.2.8
+Fetching sprockets-rails 3.2.1
+Installing sprockets-rails 3.2.1
+Using coffee-rails 4.1.1
+Using jquery-rails 4.3.1
+Using rails 4.2.8
+Using sass-rails 5.0.6
+Using web-console 2.3.0
+Bundle complete! 12 Gemfile dependencies, 60 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+C:\Projetos>cd computacaonapratica
+
+C:\Projetos\computacaonapratica>
+
+</code>
+</pre>
+
+<h4>#Iniciar o servidor</h4>
+
+<pre>
+<code>
+
+C:\Projetos\computacaonapratica>rails s
+=> Booting WEBrick
+=> Rails 4.2.8 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2017-09-13 05:16:16] INFO  WEBrick 1.3.1
+[2017-09-13 05:16:16] INFO  ruby 2.2.6 (2016-11-15) [x64-mingw32]
+[2017-09-13 05:16:16] INFO  WEBrick::HTTPServer#start: pid=18536 port=3000
+</code>
+</pre>
+
+<h5>Abrir o navegador em http://localhost:3000/</h5>
+<br/>
+<h4>#Parar o servidor</h4>
+
+<pre>
+<code>
+Ctrl + c 
+
+Started GET "/" for ::1 at 2017-09-13 05:17:29 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (25.7ms)
+Completed 200 OK in 272ms (Views: 250.5ms | ActiveRecord: 0.0ms)
+[2017-09-13 05:19:46] INFO  going to shutdown ...
+[2017-09-13 05:19:46] INFO  WEBrick::HTTPServer#start done.
+Exiting
+Deseja finalizar o arquivo em lotes (S/N)? S
+
+C:\Projetos\computacaonapratica>
+</code>
+</pre>
+
+<h4>#Instalar o bootstrap</h4>
+
+<pre>
+<code>
+Abrir o Sublime Text3
+Abrir o arquivo Gemfile
+
+gem 'bootstrap-sass', '~> 3.3.6'
+
+Salvar o arquivo Gemfile
+
+No prompt:
+
+C:\Projetos\computacaonapratica>bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/..............
+Fetching gem metadata from https://rubygems.org/...
+Resolving dependencies...
+Using rake 12.1.0
+Using i18n 0.8.6
+Using minitest 5.10.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.3
+Using activesupport 4.2.8
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.2.0
+Using nokogiri 1.8.0 (x64-mingw32)
+Using rails-deprecated_sanitizer 1.0.3
+Using rails-dom-testing 1.0.8
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.3
+Using actionview 4.2.8
+Using rack 1.6.8
+Using rack-test 0.6.3
+Using actionpack 4.2.8
+Using globalid 0.4.0
+Using activejob 4.2.8
+Using mime-types-data 3.2016.0521
+Using mime-types 3.1
+Using mail 2.6.6
+Using actionmailer 4.2.8
+Using activemodel 4.2.8
+Using arel 6.0.4
+Using activerecord 4.2.8
+Using execjs 2.7.0
+Fetching autoprefixer-rails 7.1.4
+Installing autoprefixer-rails 7.1.4
+Using debug_inspector 0.0.3
+Using binding_of_caller 0.7.2
+Using rb-fsevent 0.10.2
+Using ffi 1.9.18 (x64-mingw32)
+Using rb-inotify 0.9.10
+Using sass-listen 4.0.0
+Using sass 3.5.1
+Using bootstrap-sass 3.3.7
+Using bundler 1.16.0.pre.2
+Using byebug 9.1.0
+Using coffee-script-source 1.12.2
+Using coffee-script 2.4.1
+Using thor 0.20.0
+Using railties 4.2.8
+Using coffee-rails 4.1.1
+Using concurrent-ruby 1.0.5
+Using multi_json 1.12.2
+Using jbuilder 2.7.0
+Using jquery-rails 4.3.1
+Using json 1.8.6
+Using sprockets 3.7.1
+Using sprockets-rails 3.2.1
+Using rails 4.2.8
+Using rdoc 4.3.0
+Using tilt 2.0.8
+Using sass-rails 5.0.6
+Using sdoc 0.4.2
+Using sqlite3 1.3.13 (x64-mingw32)
+Using turbolinks-source 5.0.3
+Using turbolinks 5.0.1
+Using tzinfo-data 1.2017.2
+Using uglifier 3.2.0
+Using web-console 2.3.0
+Bundle complete! 13 Gemfile dependencies, 62 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+C:\Projetos\computacaonapratica>
+
+Verificar que o bootstrap-sass foi instalado
+</code>
+</pre>
+
+<h4># Configurar o bootstrap</h4>
+
+<pre>
+<code>
+Renomear o arquivo app/assets/stylesheets/application.css para:
+app/assets/stylesheets/application.scss
+
+Limpar todo o conteúdo do arquivo application.scss 
+
+No arquivo application.scss adicionar:
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+Abrir o arquivo app/assets/javascripts/application.js
+# Adicionar o bootstrap ABAIXO de JQuery
+
+//= require jquery
+//= require bootstrap-sprockets
+
+</code>
+</pre>
+
+<h4>#Iniciar o servidor</h4>
+
+<pre>
+<code>
+
+C:\Projetos\computacaonapratica>rails s
+=> Booting WEBrick
+=> Rails 4.2.8 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2017-09-13 05:16:16] INFO  WEBrick 1.3.1
+[2017-09-13 05:16:16] INFO  ruby 2.2.6 (2016-11-15) [x64-mingw32]
+[2017-09-13 05:16:16] INFO  WEBrick::HTTPServer#start: pid=18536 port=3000
+</code>
+</pre>
+
+<h5>Abrir o navegador em http://localhost:3000/</h5>
+<br/>
+<h4>#Parar o servidor</h4>
+
+<pre>
+<code>
+
+Ctrl + c 
+
+Started GET "/" for ::1 at 2017-09-13 05:17:29 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (25.7ms)
+Completed 200 OK in 272ms (Views: 250.5ms | ActiveRecord: 0.0ms)
+[2017-09-13 05:19:46] INFO  going to shutdown ...
+[2017-09-13 05:19:46] INFO  WEBrick::HTTPServer#start done.
+Exiting
+Deseja finalizar o arquivo em lotes (S/N)? S
+
+C:\Projetos\computacaonapratica>
+</code>
+</pre>
+
+<h4># Criar a página de login para usuário</h4>
+<br/>
+<h5>## Instalando o Devise</h5>
+
+<pre>
+<code>
+No arquivo Gemfile adicionar
+
+gem 'devise', '~> 4.2'
+
+C:\Projetos\computacaonapratica>rails g devise:install
+
+ create  config/initializers/devise.rb
+      create  config/locales/devise.en.yml
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <'p class="notice"><'%= notice %><'/p>
+       <'p class="alert"><'%= alert %><'/p>
+
+  4. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+===============================================================================
+</code>
+</pre>
+
+<h4># Configurar o Devise</h4>
+<br/>
+<h5>## No arquivo config/environments/development.rb:</h5>
+
+<pre>
+<code>
+
+config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+</code>
+</pre>
+         
+<h5>## No arquivo config/routes.rb:</h5>
+
+<pre>
+<code>    
+root 'pages#home'
+</code>
+</pre>
+
+<h5>## Criar a rota</h5>
+
+<pre>
+<code>
+C:\Projetos\computacaonapratica>rake routes
+                  Prefix Verb   URI Pattern                    Controller#Action
+        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
+            user_session POST   /users/sign_in(.:format)       devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
+           user_password POST   /users/password(.:format)      devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)  devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
+                         PATCH  /users/password(.:format)      devise/passwords#update
+                         PUT    /users/password(.:format)      devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
+       user_registration POST   /users(.:format)               devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
+                         PATCH  /users(.:format)               devise/registrations#update
+                         PUT    /users(.:format)               devise/registrations#update
+                         DELETE /users(.:format)               devise/registrations#destroy
+                    root GET    /                              pages#home
+         
+</code>
+</pre>
+
+<h5>## Criar a pasta app/views/pages</h5>
+<br/>
+<h5>## Criar o arquivo pages.html.erb dentro da pasta app/views/pages</h5>
+<br/>
+<h5>Com o seguinte conteúdo:</h5>
+
+<pre>
+<code>
+<'p>pages#home</'p>
+<'%= link_to "Log in", new_user_session_path %> | <'%= link_to "Log out", destroy_user_session_path, method: :delete %>
+</code>
+</pre>
+
+<h5>## Criar o controlador PagesController em  app/controller/pages_controller.rb</h5>
+<br/>
+<h5>Com o seguinte conteúdo:</h5>
+<pre>
+<code>
+class PagesController < ApplicationController
+  def home
+      
+  end
+
+end
+</code>
+</pre>
+
+<h5>## No arquivo app/views/layouts/application.html.erb:</h5>
+
+<pre>
+<code>   
+       <'p class="notice"><'%= notice %><'/p>
+       <'p class="alert"><'%= alert %><'/p>
+</code>
+</pre>
+         
+<h4># Criar o model User</h4>
+
+<pre>
+<code>
+C:\Projetos\computacaonapratica>rails g devise User
+      invoke  active_record
+      create    db/migrate/20170809005335_devise_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+      insert    app/models/user.rb
+       route  devise_for :users
+</code>
+</pre>
+         
+<h4># Adicionar no Banco de Dados</h4>
+
+<pre>
+<code>
+rails 4> C:\Projetos\computacaonapratica>rake db:migrate
+== 20170809005335 DeviseCreateUsers: migrating ================================
+-- create_table(:users)
+   -> 0.0033s
+-- add_index(:users, :email, {:unique=>true})
+   -> 0.0019s
+-- add_index(:users, :reset_password_token, {:unique=>true})
+   -> 0.0013s
+== 20170809005335 DeviseCreateUsers: migrated (0.0092s) =======================
+</code>
+</pre>
+
+<h4># Abrir o programa DB Browser for SQLite que está instalado na máquina</h4><br/>
+
+<h5>Selecionar o esquema em :/db/development.sqlite3</h5><br/>
+
+<h5>Abrir a tabela users</h5><br/>
+
+<h4># Adicionar as Views</h4>
+
+<pre>
+<code>
+C:\Projetos\computacaonapratica>rails g devise:views
+Expected boolean default value for '--markerb'; got :erb (string)
+      invoke  Devise::Generators::SharedViewsGenerator
+      create    app/views/devise/shared
+      create    app/views/devise/shared/_links.html.erb
+      invoke  form_for
+      create    app/views/devise/confirmations
+      create    app/views/devise/confirmations/new.html.erb
+      create    app/views/devise/passwords
+      create    app/views/devise/passwords/edit.html.erb
+      create    app/views/devise/passwords/new.html.erb
+      create    app/views/devise/registrations
+      create    app/views/devise/registrations/edit.html.erb
+      create    app/views/devise/registrations/new.html.erb
+      create    app/views/devise/sessions
+      create    app/views/devise/sessions/new.html.erb
+      create    app/views/devise/unlocks
+      create    app/views/devise/unlocks/new.html.erb
+      invoke  erb
+      create    app/views/devise/mailer
+      create    app/views/devise/mailer/confirmation_instructions.html.erb
+      create    app/views/devise/mailer/email_changed.html.erb
+      create    app/views/devise/mailer/password_change.html.erb
+      create    app/views/devise/mailer/reset_password_instructions.html.erb
+      create    app/views/devise/mailer/unlock_instructions.html.erb
+</code>
+</pre>
+
+<h4># Iniciar o servidor e cadastrar um novo usuário</h4>
+
+<pre>
+<code>
+C:\Projetos\computacaonapratica>rails s
+</code>
+</pre>
+
+<h5>Acessar a página http://localhost:3000/users/sign_up</h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_032.png", width: 730, height: 660) %>
+<h5>Cadastrar um novo usuário</h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_033.png", width: 730, height: 660) %>
+<h5># O sistema direciona para a página Home.</h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_034.png", width: 730, height: 660) %>
+<h5>Verificar no banco de dados se o usuário foi criado com sucesso.</h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_035.png", width: 730, height: 660) %>
+<h5># Fazer o log out.</h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_036.png", width: 730, height: 660) %>
+<h5># Fazer o login </h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_037.png", width: 730, height: 660) %>
+<h5># Mensagem de login com sucesso </h5><br/>
+<%= image_tag("/assets/tutorial_login/computacaonapratica_038.png", width: 730, height: 660) %>
+</div>
+</div>
+
+</div> <!-- div container -->
+
+<script>
+
+  var open = true;
+
+  $('#filter1').click(function() {
+    if (open) {
+      $('#filter1').html("Fechar <i class='fa fa-chevron-up'></i>")
+    } else {
+      $('#filter1').html("Abrir <i class='fa fa-chevron-down'></i>")
+    }
+    open = !open;
+  });
+</script>
+
+
+<script>
+
+  var open = true;
+
+  $('#filter2').click(function() {
+    if (open) {
+      $('#filter2').html("Fechar <i class='fa fa-chevron-up'></i>")
+    } else {
+      $('#filter2').html("Abrir <i class='fa fa-chevron-down'></i>")
+    }
+    open = !open;
+  });
+</script>
+
+<script>
+
+  var open = true;
+
+  $('#filter3').click(function() {
+    if (open) {
+      $('#filter3').html("Fechar <i class='fa fa-chevron-up'></i>")
+    } else {
+      $('#filter3').html("Abrir <i class='fa fa-chevron-down'></i>")
+    }
+    open = !open;
+  });
+</script>
