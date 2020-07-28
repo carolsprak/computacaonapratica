@@ -5,7 +5,7 @@ description: >-
   ZERO, desde a instalação até a página de l
 ---
 
-# Instalação necessária para Ruby on Rails
+# 1. Instalação necessária para Ruby on Rails
 
 ## 1. Instalar o Rails \(Simplificado\)
 

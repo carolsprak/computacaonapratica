@@ -2,7 +2,7 @@
 description: 'Nessa aula, será apresentado a criação do projeto Computação na Prática.'
 ---
 
-# Criar um projeto em Ruby on Rails
+# 2. Criar um projeto em Ruby on Rails
 
 ## 1. Criar um projeto em Rails
 

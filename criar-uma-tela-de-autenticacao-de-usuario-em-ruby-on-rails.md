@@ -1,4 +1,4 @@
-# Criar uma tela de autenticação de usuário em Ruby on Rails
+# 3. Criar uma tela de autenticação de usuário em Ruby on Rails
 
 ## 1. **Entrar no projeto rails criado ComputacaoNaPratica**
 
