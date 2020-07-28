@@ -443,37 +443,49 @@ C:\Projetos\computacaonapratica>rails s
 Acessar a página [http://localhost:3000/users/sign\_up](http://localhost:3000/users/sign_up)
 
 [  
-![](https://3.bp.blogspot.com/-w3CnVTg7MH0/WdBYzhozJjI/AAAAAAAABTo/jqI-83jTlN4iNyJyAwY68x_ZjvdMjegJwCEwYBhgL/s320/computacaonapratica_032.png)](https://3.bp.blogspot.com/-w3CnVTg7MH0/WdBYzhozJjI/AAAAAAAABTo/jqI-83jTlN4iNyJyAwY68x_ZjvdMjegJwCEwYBhgL/s1600/computacaonapratica_032.png)  
+](https://3.bp.blogspot.com/-w3CnVTg7MH0/WdBYzhozJjI/AAAAAAAABTo/jqI-83jTlN4iNyJyAwY68x_ZjvdMjegJwCEwYBhgL/s1600/computacaonapratica_032.png)  
 
+
+![](https://3.bp.blogspot.com/-w3CnVTg7MH0/WdBYzhozJjI/AAAAAAAABTo/jqI-83jTlN4iNyJyAwY68x_ZjvdMjegJwCEwYBhgL/s320/computacaonapratica_032.png)
 
 **Cadastrar um novo usuário**
 
-[![](https://1.bp.blogspot.com/-KEIC-3myL0A/WdBY63XNxiI/AAAAAAAABTo/WocED9p4PTYq0KRDCjsaCxJVNBnu1sEIACEwYBhgL/s320/computacaonapratica_033.png)](https://1.bp.blogspot.com/-KEIC-3myL0A/WdBY63XNxiI/AAAAAAAABTo/WocED9p4PTYq0KRDCjsaCxJVNBnu1sEIACEwYBhgL/s1600/computacaonapratica_033.png)  
+  
 
+
+![](https://1.bp.blogspot.com/-KEIC-3myL0A/WdBY63XNxiI/AAAAAAAABTo/WocED9p4PTYq0KRDCjsaCxJVNBnu1sEIACEwYBhgL/s320/computacaonapratica_033.png)
 
 **\# O sistema direciona para a página Home.**
 
-[![](https://3.bp.blogspot.com/-xoXlpzVidO4/WdBY69ONg8I/AAAAAAAABTo/XeGiYAtSEck5ibp_shUu79PhX6JTbJMAACEwYBhgL/s320/computacaonapratica_034.png)](https://3.bp.blogspot.com/-xoXlpzVidO4/WdBY69ONg8I/AAAAAAAABTo/XeGiYAtSEck5ibp_shUu79PhX6JTbJMAACEwYBhgL/s1600/computacaonapratica_034.png)  
+  
 
+
+![](https://3.bp.blogspot.com/-xoXlpzVidO4/WdBY69ONg8I/AAAAAAAABTo/XeGiYAtSEck5ibp_shUu79PhX6JTbJMAACEwYBhgL/s320/computacaonapratica_034.png)
 
 **Verificar no banco de dados se o usuário foi criado com sucesso.**
 
-[![](https://2.bp.blogspot.com/--d_Acboaa8c/WdBY69XoB4I/AAAAAAAABTo/YAjjotmZFjYFxAGGdsvsmoLMybJxNP1jgCEwYBhgL/s320/computacaonapratica_035.png)](https://2.bp.blogspot.com/--d_Acboaa8c/WdBY69XoB4I/AAAAAAAABTo/YAjjotmZFjYFxAGGdsvsmoLMybJxNP1jgCEwYBhgL/s1600/computacaonapratica_035.png)  
+  
 
+
+![](https://2.bp.blogspot.com/--d_Acboaa8c/WdBY69XoB4I/AAAAAAAABTo/YAjjotmZFjYFxAGGdsvsmoLMybJxNP1jgCEwYBhgL/s320/computacaonapratica_035.png)
 
 **\# Fazer o log out.**
 
-[![](https://3.bp.blogspot.com/-_ystAfACt9w/WdBY7JILXdI/AAAAAAAABTo/vD_7mVmbS8km71BGAZKWccTAbrcVJxzZgCEwYBhgL/s320/computacaonapratica_036.png)](https://3.bp.blogspot.com/-_ystAfACt9w/WdBY7JILXdI/AAAAAAAABTo/vD_7mVmbS8km71BGAZKWccTAbrcVJxzZgCEwYBhgL/s1600/computacaonapratica_036.png)  
+  
 
+
+![](https://3.bp.blogspot.com/-_ystAfACt9w/WdBY7JILXdI/AAAAAAAABTo/vD_7mVmbS8km71BGAZKWccTAbrcVJxzZgCEwYBhgL/s320/computacaonapratica_036.png)
 
 **\# Fazer o login**
 
-[![](https://1.bp.blogspot.com/-oWijQBBRwVM/WdBY7SasL3I/AAAAAAAABTo/TduApvbuR7MvljhYxthXTvcCnN2YlKzqgCEwYBhgL/s320/computacaonapratica_037.png)](https://1.bp.blogspot.com/-oWijQBBRwVM/WdBY7SasL3I/AAAAAAAABTo/TduApvbuR7MvljhYxthXTvcCnN2YlKzqgCEwYBhgL/s1600/computacaonapratica_037.png)  
+  
 
+
+![](https://1.bp.blogspot.com/-oWijQBBRwVM/WdBY7SasL3I/AAAAAAAABTo/TduApvbuR7MvljhYxthXTvcCnN2YlKzqgCEwYBhgL/s320/computacaonapratica_037.png)
 
 **\# Mensagem de login com sucesso**
 
-[![](https://4.bp.blogspot.com/-iGJC6uacpXM/WdBY7ZvINAI/AAAAAAAABTo/qd3f0mON1tk9mUmXTTkU3ZwyaFE6kxoYQCEwYBhgL/s320/computacaonapratica_038.png)](https://4.bp.blogspot.com/-iGJC6uacpXM/WdBY7ZvINAI/AAAAAAAABTo/qd3f0mON1tk9mUmXTTkU3ZwyaFE6kxoYQCEwYBhgL/s1600/computacaonapratica_038.png)
+![](https://4.bp.blogspot.com/-iGJC6uacpXM/WdBY7ZvINAI/AAAAAAAABTo/qd3f0mON1tk9mUmXTTkU3ZwyaFE6kxoYQCEwYBhgL/s320/computacaonapratica_038.png)
 
 > DICA: Se houver algum erro "cannot load such file -- bcrypt\_ext", precisa alterar no arquivo Gemfile da raíz do projeto
 
