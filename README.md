@@ -1,11 +1,22 @@
----
-description: >-
-  Para você que está começando a programar e ainda está tendo muita dificuldade,
-  este curso é para você. Com ele você vai conseguir fazer uma aplicação WEB do
-  ZERO, desde a instalação até a página de login.
----
+# Descrição: 
 
-# 1. Instalação necessária para Ruby on Rails
+Para você que está começando a programar e ainda está tendo muita dificuldade, este curso é para você. Com ele você vai conseguir fazer uma aplicação WEB do ZERO, desde a instalação até a página de login.
+
+# 1. Instalação usando Docker do projeto
+
+```bash
+# Primeira vez que for iniciar o projeto no docker
+$ sudo docker-compose build
+
+# Iniciar o servidor de aplicação do docker
+$ sudo docker-compose up
+
+# Em caso de mudanças na aplicação, para reiniciar o servidor.
+$ Ctrl + c
+$ sudo docker-compose up --build
+```
+
+# 2. Instalação necessária para Ruby on Rails
 
 ## 1. Instalar o Rails \(Simplificado\)
 
