@@ -2,7 +2,11 @@
 
 Para você que está começando a programar e ainda está tendo muita dificuldade, este curso é para você. Com ele você vai conseguir fazer uma aplicação WEB do ZERO, desde a instalação até a página de login.
 
-- Acessar tutorial completo: https://carolsprak.gitbook.io/ruby-on-rails-para-iniciantes/
+Acessar tutorial, apenas para fins acadêmicos, sobre instalação de Ruby on Rails v 4.2.9: 
+- https://carolsprak.gitbook.io/ruby-on-rails-para-iniciantes/
+
+Versão Atual do Rails no site ofical:
+- https://rubyonrails.org/
 
 # 1. Instalação usando Docker do projeto
 
