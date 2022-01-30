@@ -2,15 +2,19 @@
 
 Para você que está começando a programar e ainda está tendo muita dificuldade, este curso é para você. Com ele você vai conseguir fazer uma aplicação WEB do ZERO, desde a instalação até a página de login.
 
+- Acessar tutorial completo: https://carolsprak.gitbook.io/ruby-on-rails-para-iniciantes/
+
 # 1. Instalação usando Docker do projeto
 
 ```bash
 # Primeira vez que for iniciar o projeto no docker
 $ sudo docker-compose build
-
+```
+```bash
 # Iniciar o servidor de aplicação do docker
 $ sudo docker-compose up
-
+```
+```bash
 # Em caso de mudanças na aplicação, para reiniciar o servidor.
 $ Ctrl + c
 $ sudo docker-compose up --build
@@ -35,7 +39,7 @@ Execute o comando abaixo em um terminal e verifique se o Rails foi instalado cor
 
 Por exemplo:
 
-```ruby
+```bash
 $ rails -v
 # Rails 4.1.6
 ```
@@ -60,7 +64,7 @@ Execute o comando abaixo em um terminal e verifique se o Rails foi instalado cor
 
 Por exemplo:
 
-```ruby
+```bash
 $ ruby -v
 ruby 2.2.6p396 (2016-11-15 revision 56800) [x64-mingw32]
 ```
@@ -81,13 +85,13 @@ Após o download, descompactar e colocar as DLLs na pasta do \bin do C:\Ruby22-x
 
 Instalar a gem para SQLite3, no terminal:
 
-```ruby
+```bash
 $ gem install sqlite3 -v 1.3.12
 ```
 
  Pesquisar pela versão mais atual em [https://rubygems.org/gems/sqlite3/versions](http://v/)
 
-```ruby
+```bash
 $ gem install --version 1.3.3 sqlite3-ruby
 ```
 
@@ -145,25 +149,13 @@ Execute o comando abaixo em um terminal e verifique se o Rails foi instalado cor
   
 Por exemplo:
 
-```ruby
+```bash
 $ rails -v
 # Rails 4.2.9
 ```
-# 2. Docker do projeto
-
-```bash
-# Primeira vez que for iniciar o projeto no docker
-$ sudo docker-compose build
-# Iniciar o servidor de aplicação do docker
-$ sudo docker-compose up
-# Em um outro terminal criar as tabelas de banco de dados
-$ sudo docker-compose run web rake db:create
-# Em caso de mudanças na aplicação, para reiniciar o servidor.
-$ Ctrl + c
-$ sudo docker-compose up --build
 
 ## Autora
-* **Anne Caroline Rocha**
+* Anne Caroline Rocha
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT - veja [LICENSE](LICENSE)
