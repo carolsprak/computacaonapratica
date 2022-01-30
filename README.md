@@ -1,8 +1,8 @@
 ---
 description: >-
   Para você que está começando a programar e ainda está tendo muita dificuldade,
-  este curso é para você.Com ele você vai conseguir fazer uma aplicação WEB do
-  ZERO, desde a instalação até a página de l
+  este curso é para você. Com ele você vai conseguir fazer uma aplicação WEB do
+  ZERO, desde a instalação até a página de login.
 ---
 
 # 1. Instalação necessária para Ruby on Rails
@@ -151,5 +151,10 @@ $ sudo docker-compose run web rake db:create
 $ Ctrl + c
 $ sudo docker-compose up --build
 
+## Autora
+* **Anne Caroline Rocha**
+
+## Licença
+Este projeto está licenciado sob a Licença MIT - veja [LICENSE](LICENSE)
 
 
